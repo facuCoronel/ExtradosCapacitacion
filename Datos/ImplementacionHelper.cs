@@ -26,8 +26,12 @@ namespace EmpleadosDapper.Datos
 
                 Console.WriteLine(l.ToString());
             }
+        }
 
 
+        public void AscenderPersona(int tipo, int id)
+        {
+            h.PutAscenderPersona(tipo, id);
         }
     }
 }

@@ -31,6 +31,26 @@ namespace EmpleadosDapper.Datos
             }
         }
 
+        public void PutAscenderPersona(int tipo, int id)
+        {
+            string consulta = @"update Personas set id_tipo = @tipo where id_persona = @id ";
+
+            using(var conn = new SqlConnection(stringConnection))
+            {
+                conn.Open();
+                var parametros = new DynamicParameters();
+
+                parametros.Add("@tipo", tipo);
+                parametros.Add("@id", id);
+
+                conn.Execute(consulta,parametros,commandType: CommandType.Text);
+
+            }
+
+
+
+        }
+
 
 
     }
