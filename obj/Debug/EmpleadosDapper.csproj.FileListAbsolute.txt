@@ -1,0 +1,11 @@
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\bin\Debug\EmpleadosDapper.exe.config
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\bin\Debug\EmpleadosDapper.exe
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\bin\Debug\EmpleadosDapper.pdb
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\bin\Debug\Dapper.dll
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\bin\Debug\Dapper.xml
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\obj\Debug\EmpleadosDapper.csproj.AssemblyReference.cache
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\obj\Debug\EmpleadosDapper.csproj.SuggestedBindingRedirects.cache
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\obj\Debug\EmpleadosDapper.csproj.CoreCompileInputs.cache
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\obj\Debug\EmpleadosDapper.csproj.CopyComplete
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\obj\Debug\EmpleadosDapper.exe
+C:\Users\facun\OneDrive\Desktop\Extrados\POO\02EjercicioEmpleadoDapper\EmpleadosDapper\obj\Debug\EmpleadosDapper.pdb
