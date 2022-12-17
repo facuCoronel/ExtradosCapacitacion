@@ -62,7 +62,6 @@ namespace EmpleadosDapper.Datos
                 parametros.Add("@id_tipo", p.idTipo);
 
                 conn.Execute(consulta, parametros, commandType: CommandType.Text);
-                //conn.Execute(consulta,commandType: CommandType.Text);
             }
         }
 
