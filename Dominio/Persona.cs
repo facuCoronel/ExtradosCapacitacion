@@ -12,15 +12,11 @@ namespace EmpleadosDapper.Dominio
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string FechaNacimiento { get; set; }
-        public TipoEmpleado TipoEmpleado { get; set; }
-        public Persona()
-        {
-           TipoEmpleado = new TipoEmpleado();    
-        }
+
 
         public override string ToString()
         {
-            return $"Id: {idPersona} Apellido y nombre: {Apellido}, {Nombre} Fecha Nac: {FechaNacimiento} Tipo Empleado: {Tipo}";
+            return $"Id: {idPersona}  ||  Apellido y nombre: {Apellido}, {Nombre}  ||  Fecha Nac: {FechaNacimiento}  ||  Tipo Empleado: {Tipo}";
         }
 
     }

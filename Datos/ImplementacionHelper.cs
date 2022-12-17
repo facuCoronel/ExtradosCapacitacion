@@ -33,5 +33,11 @@ namespace EmpleadosDapper.Datos
         {
             h.PutAscenderPersona(tipo, id);
         }
+
+
+        public void PostPersona(Persona p)
+        {
+            h.PostPersona(p);
+        }
     }
 }

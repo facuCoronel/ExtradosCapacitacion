@@ -20,11 +20,12 @@ namespace EmpleadosDapper.Datos
 
         public List<Persona> GetPersona()
         {
-            string consulta = "select p.id_persona 'idPersona', p.Apellido 'Apellido', p.Nombre 'Nombre', Convert(varchar, p.FechaNac, 106) 'FechaNacimiento', t.tipo 'Tipo' from Personas p join TipoEmpleado t on p.id_tipo = t.id_tipo";
+            string consulta = "select p.id_persona 'idPersona', p.Apellido 'Apellido', p.Nombre 'Nombre', Convert(varchar, p.FechaNac, 106) 'FechaNacimiento', t.tipo 'Tipo' " +
+                "               from Personas p join TipoEmpleado t on p.id_tipo = t.id_tipo";
             using (var conn = new SqlConnection(stringConnection))
             {
                 conn.Open();
-                var persona =  conn.Query<Persona>(consulta).ToList();
+                var persona = conn.Query<Persona>(consulta).ToList();
 
                 return persona;
 
@@ -35,7 +36,7 @@ namespace EmpleadosDapper.Datos
         {
             string consulta = @"update Personas set id_tipo = @tipo where id_persona = @id ";
 
-            using(var conn = new SqlConnection(stringConnection))
+            using (var conn = new SqlConnection(stringConnection))
             {
                 conn.Open();
                 var parametros = new DynamicParameters();
@@ -43,15 +44,27 @@ namespace EmpleadosDapper.Datos
                 parametros.Add("@tipo", tipo);
                 parametros.Add("@id", id);
 
-                conn.Execute(consulta,parametros,commandType: CommandType.Text);
-
+                conn.Execute(consulta, parametros, commandType: CommandType.Text);
             }
-
-
-
         }
 
+        public void PostPersona(Persona p)
+        {
+            string consulta = $"Insert into Personas values (@nombre,@apellido,@fechanac,@id_tipo)";
+            using(var conn = new SqlConnection(stringConnection))
+            {
+                conn.Open();
+                var parametros = new DynamicParameters();
 
+                parametros.Add("@nombre", p.Nombre);
+                parametros.Add("@apellido", p.Apellido);
+                parametros.Add("@fechanac", p.FechaNacimiento);
+                parametros.Add("@id_tipo", p.idTipo);
+
+                conn.Execute(consulta, parametros, commandType: CommandType.Text);
+                //conn.Execute(consulta,commandType: CommandType.Text);
+            }
+        }
 
     }
 }
